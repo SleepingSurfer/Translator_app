@@ -1,26 +1,31 @@
 <html>
 <head>
     <link rel ="stylesheet" href = "Style.css">
-
+    <script src="Application.js"> //tak się pliki linkuje</script>
 </head>
 <body class = bg>
 <div class = header>
-    <button class = button>Dodaj słowo</button>
-    <button class = button>Quiz</button>
-    <button class = button>Ostatnio dodane</button>
-    <button class = button>Reset</button>
+    <script> let x = new menu(); //tu trzeba zmienne tworzyć aby cały plik miał do nich dostęp </script>
+    <button class = button onclick="x.option1()">Dodaj słowo</button>
+    <button class = button onclick="x.option2()">Quiz</button>
+    <button class = button onclick="x.option3()">Ostatnio dodane</button>
+    <button class = button onclick="x.option4()">Reset</button>
 </div>
 <div class = content>
     Nowe słowo 
-    <textarea class = textarea></textarea>
+    <textarea class = textarea id = 1>as</textarea>
     <hr>
-    1 tłumaczenie 
-    <textarea class = textarea></textarea>
+    Podstawowe tłumaczenie 
+    <textarea class = textarea id = 2>as</textarea>
     2 tłumaczenie
-    <textarea class = textarea></textarea>
+    <textarea class = textarea id = 3>as</textarea>
+    3 tłumaczenie 
+    <textarea class = textarea id = 4>as</textarea>
+    4 tłumaczenie
+    <textarea class = textarea id = 5>as</textarea>
     <hr>
     Zdanie z wykorzystaniem słowa orginalnego
-    <textarea class = textarea></textarea>
+    <textarea class = textarea id = 6>as</textarea>
 </div>
 <div class = footer></div>
 </body>
