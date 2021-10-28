@@ -5,27 +5,30 @@
 </head>
 <body class = bg>
 <div class = header>
-    <script> let x = new menu(); //tu trzeba zmienne tworzyć aby cały plik miał do nich dostęp </script>
-    <button class = button onclick="x.option1()">Dodaj słowo</button>
-    <button class = button onclick="x.option2()">Quiz</button>
+    <script>
+        let x = new menu(); //tu trzeba zmienne tworzyć aby cały plik miał do nich dostęp 
+        let y = new word();
+    </script>
+    <button class = button onclick="y.collect()">Dodaj słowo</button>
+    <button class = button onclick="y.display()">Quiz</button>
     <button class = button onclick="x.option3()">Ostatnio dodane</button>
     <button class = button onclick="x.option4()">Reset</button>
 </div>
 <div class = content>
     Nowe słowo 
-    <textarea class = textarea id = 1>as</textarea>
+    <textarea class = textarea id = 1></textarea>
     <hr>
     Podstawowe tłumaczenie 
-    <textarea class = textarea id = 2>as</textarea>
+    <textarea class = textarea id = 2></textarea>
     2 tłumaczenie
-    <textarea class = textarea id = 3>as</textarea>
+    <textarea class = textarea id = 3></textarea>
     3 tłumaczenie 
-    <textarea class = textarea id = 4>as</textarea>
+    <textarea class = textarea id = 4></textarea>
     4 tłumaczenie
-    <textarea class = textarea id = 5>as</textarea>
+    <textarea class = textarea id = 5></textarea>
     <hr>
     Zdanie z wykorzystaniem słowa orginalnego
-    <textarea class = textarea id = 6>as</textarea>
+    <textarea class = textarea id = 6></textarea>
 </div>
 <div class = footer></div>
 </body>

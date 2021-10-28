@@ -41,14 +41,40 @@ class menu
 
 class dataEditing
 {
-    constructor(orgWord,transWord,Sentence)
+    constructor(word)
     {
-        this.orgWord = orgWord;
-        this.transWord = transWord;
-        this.Sentence = Sentence;
+        this.orgWord = word.orgWord;
+        this.transWord = word.transWord;
+        this.Sentence = word.Sentence;
     }
+
 }
 
+class word
+{
+    constructor()
+    {
+        this.orgWord;
+        this.transWord;
+        this.otherTransWords;
+        this.Sentence;
+    }
+
+    collect()
+    {
+        this.orgWord =  document.getElementById('1').value;
+        this.transWord = document.getElementById('2').value;
+        this.otherTransWords = (document.getElementById('3').value,document.getElementById('4').value,document.getElementById('5').value)
+        this.Sentence = document.getElementById('6').value;
+    }
+
+    display()
+    {
+        console.log(this.orgWord)
+        console.log(this.transWord)
+        console.log(this.Sentence)
+    }
+}
 function XD()
 {
     prompt("XD");
