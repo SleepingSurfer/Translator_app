@@ -41,11 +41,18 @@ class menu
 
 class dataEditing
 {
-    constructor(word)
+    constructor(/*word*/)
     {
-        this.orgWord = word.orgWord;
-        this.transWord = word.transWord;
-        this.Sentence = word.Sentence;
+        this.fileName = "a";
+        this.orgWord = 1;//word.orgWord;
+        this.transWord = 2;//word.transWord;
+        this.Sentence = 3;//word.Sentence;
+        this.dataPackage = (this.orgWord + this.transWord + this.Sentence);
+    }
+    saveData()
+    {
+        var file = new Blob (["Hello Word"], {type: "text/plain;charset=utf-8"});
+        saveAs(file, this.fileName);
     }
 
 }
@@ -64,7 +71,7 @@ class word
     {
         this.orgWord =  document.getElementById('1').value;
         this.transWord = document.getElementById('2').value;
-        this.otherTransWords = (document.getElementById('3').value,document.getElementById('4').value,document.getElementById('5').value)
+        this.otherTransWords = ( document.getElementById('3').value + document.getElementById('4').value + document.getElementById('5').value );
         this.Sentence = document.getElementById('6').value;
     }
 
@@ -72,6 +79,7 @@ class word
     {
         console.log(this.orgWord)
         console.log(this.transWord)
+        console.log(this.otherTransWords)
         console.log(this.Sentence)
     }
 }

@@ -1,17 +1,19 @@
 <html>
 <head>
     <link rel ="stylesheet" href = "Style.css">
-    <script src="Application.js"> //tak się pliki linkuje</script>
+    <script src = "FileSaver.js"></script>
+    <script src = "Application.js"> //tak się pliki linkuje</script>
 </head>
 <body class = bg>
 <div class = header>
     <script>
         let x = new menu(); //tu trzeba zmienne tworzyć aby cały plik miał do nich dostęp 
         let y = new word();
+        let z = new dataEditing();
     </script>
     <button class = button onclick="y.collect()">Dodaj słowo</button>
     <button class = button onclick="y.display()">Quiz</button>
-    <button class = button onclick="x.option3()">Ostatnio dodane</button>
+    <button class = button onclick="z.saveData()">Ostatnio dodane</button>
     <button class = button onclick="x.option4()">Reset</button>
 </div>
 <div class = content>
