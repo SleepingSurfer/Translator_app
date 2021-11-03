@@ -43,7 +43,7 @@ class dataEditing
 {
     constructor(/*word*/)
     {
-        this.fileName = "a";
+        this.fileName = document.getElementById('7');
         this.orgWord = 1;//word.orgWord;
         this.transWord = 2;//word.transWord;
         this.Sentence = 3;//word.Sentence;
@@ -81,6 +81,14 @@ class word
         console.log(this.transWord)
         console.log(this.otherTransWords)
         console.log(this.Sentence)
+    }
+}
+
+class quiz 
+{
+    constructor()
+    {
+        
     }
 }
 function XD()

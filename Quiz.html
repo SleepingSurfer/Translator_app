@@ -1,0 +1,40 @@
+<html>
+<head>
+    <link rel ="stylesheet" href = "Style.css">
+    <script src = "FileSaver.js"></script>
+    <script src = "Application.js"> //tak się pliki linkuje</script>
+</head>
+<body class = bg>
+<div class = header>
+    <script>
+        let x = new menu(); //tu trzeba zmienne tworzyć aby cały plik miał do nich dostęp 
+        let y = new word();
+        let z = new dataEditing();
+    </script>
+    <button class = button onclick="y.collect()">Main</button>
+
+    <button class = button onclick="y.display()">Sprawdź</button>
+
+    <button class = button onclick="y.display()">Podpowiedź</button>
+</div>
+<div class = content>
+    Wybierz kategorie
+    <textarea class = textarea id = > s </textarea>
+    <hr>
+    Wpisz słowo
+    <textarea class = textarea id = ></textarea>
+    Tłumaczenie
+    <textarea class = textarea id = ></textarea>
+    Zdanie z wykorzystaniem słowa
+    <textarea class = textarea id = ></textarea>
+    <hr>
+    Podpowiedź
+    <textarea class = textarea id = ></textarea>
+    2 Podpowiedź 
+    <textarea class = textarea id = ></textarea>
+    3 Podpowiedź 
+    <textarea class = textarea id = ></textarea>
+</div>
+<div class = footer></div>
+</body>
+</html>
