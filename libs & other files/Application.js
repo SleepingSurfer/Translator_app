@@ -43,7 +43,6 @@ class dataEditing
 {
     constructor(/*word*/)
     {
-        this.fileName = document.getElementById('7');
         this.orgWord = 1;//word.orgWord;
         this.transWord = 2;//word.transWord;
         this.Sentence = 3;//word.Sentence;
@@ -51,8 +50,9 @@ class dataEditing
     }
     saveData()
     {
+        var fileName = document.getElementById('7').value;
         var file = new Blob (["Hello Word"], {type: "text/plain;charset=utf-8"});
-        saveAs(file, this.fileName);
+        saveAs(file, fileName+".html");
     }
 
 }
@@ -89,6 +89,12 @@ class quiz
     constructor()
     {
         
+    }
+    rand(x)
+    {
+        Math.ceil = 0;
+        Math.floor = x;
+        return (Math.rand()*x);
     }
 }
 function XD()
