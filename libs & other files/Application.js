@@ -36,6 +36,7 @@ class menu
         document.getElementById('4').value = "";
         document.getElementById('5').value = "";
         document.getElementById('6').value = "";
+        document.getElementById('7').value = "";
     }
 }
 
@@ -52,6 +53,7 @@ class dataEditing
     {
         var fileName = document.getElementById('7').value;
         var file = new Blob (["Hello Word"], {type: "text/plain;charset=utf-8"});
+        if(fileName+"html")
         saveAs(file, fileName+".html");
     }
 
@@ -97,7 +99,17 @@ class quiz
         return (Math.rand()*x);
     }
 }
-function XD()
+function doFileExist()
 {
-    prompt("XD");
+    var xhr = new XMLHttpRequest();
+    xhr.open('HEAD', urlToFile, false);
+    xhr.send();
+    if (xhr.status == "404")
+    {
+        return false;
+    }
+    else
+    {
+        return true;
+    }
 }
