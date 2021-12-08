@@ -52,7 +52,7 @@ class dataEditing
     saveData()
     {
         var fileName = document.getElementById('7').value;
-        var file = new Blob (["Hello Word"], {type: "text/plain;charset=utf-8"});
+        var file = new Blob (["<div> Hello Word <div>"], {type: "text/plain;charset=utf-8"});
         if(fileName+"html")
         saveAs(file, fileName+".html");
     }
